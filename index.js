@@ -23,8 +23,6 @@ app.post('/summarize', (req, res) => {
       console.log(error.message);
     });
 });
+// start the server 
+app.listen( port,() =>{ console.log( ' Server is up and running at http://localhost:${port}/');});
 
-// Start the server
-app.listen(port, () => {
-  console.log('Server running at http://localhost:${port}/');
-});
